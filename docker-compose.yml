@@ -1,0 +1,9 @@
+services:
+  pq26:
+    build: .
+    container_name: pq26
+    ports:
+      - "8082:80"
+    volumes:
+      - ./pq26:/usr/share/nginx/html/web
+    restart: unless-stopped
